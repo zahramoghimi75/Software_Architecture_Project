@@ -1,0 +1,159 @@
+﻿
+.RatingStarBox 
+{
+    float:left;
+    width:230px;
+    font-size:8pt;
+    margin-top:11px;
+}
+.RatingStarBoxShow
+{
+    margin-top:7px;
+    margin-left:10px;
+}
+.RatingStar
+{
+    float: left;
+    width: 100px;
+    height: 20px;
+    background-image: url(Star.png);
+    cursor: pointer; 
+}
+.RatingStarBoxShow .RatingStar
+{
+    cursor: default; 
+}
+.RatingStarResultBox
+{
+    float: left;
+    height: 20px;
+    color: #fff;
+    direction: ltr;
+    text-align: right;
+    width:100px;
+}
+.RatingStarResultBoxRating
+{
+    float:right;
+    height:20px;
+    width:40px;
+    text-align:center;
+    
+}
+.RatingStar .RatingStarItem
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStarItem0
+{
+    background-position: 0px 0px;
+}
+.RatingStarItem1
+{
+    background-position: 0px -20px;
+}
+.RatingStarItem2
+{
+    background-position: 0px -40px;
+}
+.RatingStarItem3
+{
+    background-position: 0px -60px;
+}
+.RatingStarItem4
+{
+    background-position: 0px -80px;
+}
+.RatingStarItem5
+{
+    background-position: 0px -100px;
+}
+.RatingStarItem6
+{
+    background-position: 0px -120px;
+}
+.RatingStarItem7
+{
+    background-position: 0px -140px;
+}
+.RatingStarItem8
+{
+    background-position: 0px -160px;
+}
+.RatingStarItem9
+{
+    background-position: 0px -180px;
+}
+.RatingStarItem10
+{
+    background-position: 0px -200px;
+}
+
+.RatingStar .Item0
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item1
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item2
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item3
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item4
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item5
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item6
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item7
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item8
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item9
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}
+.RatingStar .Item10
+{
+    width: 10px;
+    height: 20px;
+    float: left;
+}

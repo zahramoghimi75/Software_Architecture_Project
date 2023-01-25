@@ -1,0 +1,3725 @@
+﻿@font-face
+{
+	font-family: 'BYekan';
+	src: url(      '../Administrator/Files/fonts/Yekan.eot' );
+	src: url(      '../Administrator/Files/fonts/Yekan.eot#iefix' ) format(      'embedded-opentype' ), url(      '../Administrator/Files/fonts/Yekan.woff' ) format(      'woff' ), url(      '../Administrator/Files/fonts/Yekan.ttf' ) format(      'truetype' ), url(      '../Administrator/Files/fonts/Yekan.svg#CartoGothicStdBook' ) format(      'svg' );
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+	font-family: BYekan,Tahoma;
+	font-size: 9pt;
+	background-image: url(../Administrator/Files/Design/body.png);
+	line-height: 170%;
+}
+img
+{
+	border: 0;
+}
+.Row
+{
+	width: 100%;
+	float: right;
+}
+.RowMarginFive
+{
+	width: 100%;
+	float: right;
+	margin-top: 5px;
+}
+.RowMarginTen
+{
+	width: 100%;
+	float: right;
+	margin-top: 10px;
+}
+input, select, textarea
+{
+	font-family: BYekan,Tahoma;
+}
+A:hover
+{
+	color: red;
+}
+
+A
+{
+	color: Blue;
+	text-decoration: none;
+}
+/*-----------------------Header Top ------------------*/
+
+.LogoBox
+{
+	float: right;
+	height: 133px;
+	width: 980px;
+}
+.Logo
+{
+	float: right;
+	width: 980px;
+	height: 121px;
+	background-image: url(../Administrator/Files/Design/Logo.png);
+	margin-top: 0px;
+}
+.LogoBox2
+{
+	float: right;
+	width: 980px;
+	height: 48px;
+}
+.Logo2
+{
+	float: right;
+	width: 386px;
+	height: 69px;
+	background-image: url(../Administrator/Files/Design/Logo.png);
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.HeaderTopHeaderTop
+{
+	width: 100%;
+	float: right;
+}
+.HeaderTop
+{
+	width: 100%;
+	height: 160px;
+	text-align: center;
+	float: right;
+	background-image: url(../Administrator/Files/Design/HeaderBg.png);
+	background-position: top center;
+}
+.HeaderTop .HeaderTopBox
+{
+	width: 980px;
+}
+.HeaderTop2
+{
+	width: 100%;
+	height: 71px;
+	text-align: center;
+	float: right;
+	background-image: url(../Administrator/Files/Design/HeaderBg.png);
+	background-position: 0 -183px;
+}
+.HeaderTop2Box
+{
+	float: right;
+	width: 100%;
+	height: 71px;
+}
+.HeaderTop2 .HeaderTopBox2
+{
+	width: 980px;
+}
+.LogoBoxLeftTop
+{
+	float: right;
+	width: 100%;
+	height: 45px;
+}
+.HeaderTop .ItemLeft
+{
+	float: left;
+	margin-top: 12px;
+	color: #b7b7b7;
+	font-size: 9pt;
+	padding: 0px 7px 0px 7px;
+}
+.HeaderTop .ItemLeft img
+{
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+.HeaderTop .ItemLeft:hover
+{
+	color: #fff;
+}
+
+
+/*-----------------------navMenu ------------------*/
+#nav
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+	margin-top: 1px;
+	width: 700px;
+}
+#nav li:hover
+{
+	z-index: 9999999;
+}
+#nav li
+{
+	float: right;
+	display: block;
+	position: relative;
+	z-index: 500;
+	margin: 0;
+	z-index: 99999;
+	margin-left: 3px;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	background-image: url(../Administrator/Files/Design/navsep.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+#nav li:hover > a
+{
+	color: #0096dd;
+}
+
+#nav li a
+{
+	display: block;
+	padding: 14px 10px 14px 10px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	font-size: 10pt;
+}
+#nav li a .imgMenu
+{
+	height: 28px;
+}
+#nav li a p
+{
+	margin: 5px auto;
+	text-align: center;
+	margin-top: 10px;
+}
+#nav ul
+{
+	position: absolute;
+	right: 0;
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav ul li:hover > a
+{
+	color: #fff;
+	background: #009bde;
+}
+#nav ul li
+{
+	width: 200px;
+	float: right;
+	margin: 0;
+	border-top: solid 1px #262626;
+	border-left: solid 1px #262626;
+	background-color: #393939;
+}
+
+#nav ul a
+{
+	display: block;
+	height: 23px;
+	padding: 11px 10px 10px 5px;
+	text-align: right;
+	color: #fff;
+	font-size: 13px;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	background: none;
+}
+
+#nav ul.submenu ul
+{
+	position: absolute;
+	right: 200px;
+	display: none;
+	top: -1px;
+	padding: 0;
+	list-style: none;
+}
+.ArrowDown
+{
+	border: 0px;
+	padding: 0px;
+}
+.ArrowDown2
+{
+	border: 0px;
+	padding: 0px;
+	margin-top: 9px;
+	float: left;
+}
+/*----------------------------------------SlidePicture---------------------*/
+.SlideRepeat
+{
+	float:right;
+		background-image: url(../Administrator/Files/Design/SlideRepeat.png);
+		background-repeat:repeat;
+		color:#fff;
+		padding-top:20px;
+		padding-right:10px;
+		padding-left:10px;
+		
+}
+.SlidePictureBox
+{
+	float: right;
+	width: 100%;
+	height: 440px;
+}
+.SlidePicture
+{
+	float: right;
+	width: 100%;
+	height: 55px;
+}
+.SlidePictureContentBox
+{
+	width: 100%;
+}
+.SlidePictureContent
+{
+	float: right;
+	width: 100%;
+	height: 439px;
+	background-image: url(../Administrator/Files/Design/ShadowSlide.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.DateLeft
+{
+	float: left;
+	color: #fff;
+	margin-top: 10px;
+}
+/*----------------------------------------NewsSpecial---------------------*/
+
+.NewsSpecial
+{
+	float: right;
+	width: 100%;
+	background-image: url(../Administrator/Files/Design/NewsSpecial.jpg);
+	height: 44px;
+}
+.NewsSpecialBox
+{
+	width: 980px;
+}
+.NewsSpecialTitle
+{
+	float: right;
+	font-size: 12pt;
+	margin-top: 11px;
+	color: #fcff00;
+}
+.NewsSpecial a
+{
+	float: right;
+	color: #fff;
+	margin-top: 11px;
+	margin-right: 10px;
+}
+.NewsSpecial a:hover
+{
+	color: Yellow;
+}
+/*----------------------- SearchBox ------------------*/
+.SearchBox
+{
+	padding: 0px;
+	margin: 0px 0px 6px;
+	height: 26px;
+	float: left;
+	width: 210px;
+	margin-top: 11px;
+	background-image: url(../Administrator/Files/Design/SearchBox.png);
+}
+.TextBoxBox
+{
+	float: left;
+	width: 170px;
+	border-radius: 0px;
+	height: 26px;
+}
+.btnGreen
+{
+	background-color: #35b348;
+	float: left;
+	color: #fff;
+	padding: 6px 15px 8px 15px;
+	font-size: 12pt;
+}
+/*----------------------------AutoCamplet-------------------------------*/
+.TextAutoCapmlet
+{
+	font-size: 8pt;
+	float: right;
+	text-align: justify;
+}
+
+.TextBoxAutoCapmlet
+{
+	color: #333;
+	padding: 0;
+	margin: 0;
+	float: right;
+	width: 164px;
+	padding-left: 3px;
+	padding-right: 4px;
+	padding: 3px;
+	padding-bottom: 3px;
+	background-color: Transparent;
+	border: 0;
+	height: 20px;
+	font-size: 9pt !important;
+	border-radius: 0px;
+}
+.AutoCamplet
+{
+	border: solid 1px #d8d8d8;
+	border-top: 0;
+	width: 208px;
+	float: right;
+	z-index: 1000000000000;
+	position: relative;
+	top: 0;
+	left: 0;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-bottom: 10px;
+	background-color: #fff;
+	-moz-box-shadow: 0 3px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 3px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0 3px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	text-shadow: 0 3px 0 rgba(255,255,255,.4);
+	  margin-right: -40px;
+}
+.AutoCamplet .Item
+{
+	float: right;
+	width: 208px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	text-align: right;
+}
+.AutoCamplet .Item:hover
+{
+	background-color: #eee;
+}
+.AutoCamplet .Item .Title
+{
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #555;
+}
+.AutoCamplet .Item img
+{
+	float: right;
+	width: 50px;
+	height: 50px;
+	border: solid 1px #ccc;
+	margin-right: 10px;
+	background-color: #fff;
+}
+.AutoCamplet .Seprator
+{
+	float: right;
+	width: 100%;
+	height: 1px;
+	background-image: url(../Administrator/Files/Design/Sep.png);
+	background-position: center;
+}
+/*----------------------------------------ServicesIndex---------------------*/
+
+.ServicesIndex
+{
+	float: right;
+	width: 100%;
+	min-height: 200px;
+	background-color: #009bde;
+}
+.ServicesIndexBox
+{
+	width: 980px;
+}
+.ServicesIndexItem
+{
+	float: right;
+	width: 980px;
+	margin-top: 20px;
+}
+.ServicesIndexItem .Item
+{
+	float: right;
+	width: 170px;
+	height: 230px;
+	margin-left: 26px;
+	margin-bottom: 30px;
+}
+.ServicesIndexItem .Shadow
+{
+	float: right;
+	width: 170px;
+	background-image: url(../Administrator/Files/Design/ShadowServicepng.png);
+	height: 12px;
+}
+.ServicesIndexItem .Item .ItemImage
+{
+	width: 170px;
+	height: 180px;
+}
+.ServicesIndexItem:hover > .PicBox .Pic
+{
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.ServicesIndexItem .Title
+{  float: right;
+  width: 100%;
+  height: 30px;
+  font-size: 11pt;
+  color: #009bde;
+  z-index: 99999;
+  position: relative;
+  background-color: #e1e1e1;
+  border-bottom: solid 4px #868686;
+  padding-top: 9px;
+  text-align: center;
+
+}
+
+.ServicesIndexItem .Title:hover
+{
+	color: #00467f;
+	cursor: pointer;
+}
+/*----------------------------------------ArticleNewsIndex---------------------*/
+.ArticleNewsIndex
+{
+	float: right;
+	width: 100%;
+}
+.ArticleNewsIndexBox
+{
+	width: 980px;
+}
+/*----------------------------------------BoxIndexText---------------------*/
+.BoxIndexText
+{
+	float: right;
+	width: 100%;
+}
+.BoxIndexTextBox
+{
+	width: 980px;
+}
+.BoxIndexTextBoxBox
+{
+	float: right;
+	width: 940px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 0px 17px #888;
+	padding: 5px 20px 5px 20px;
+	color: #575757;
+	font-size: 10pt;
+}
+.BoxIndexTextBoxBox h1
+{
+	float: right;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: #890d0b;
+	text-align: center;
+	font-size: 16pt;
+	margin-top: 20px;
+	font-weight: normal;
+}
+
+/*----------------------------------------IndexProduct---------------------*/
+.IndexProduct
+{
+	float: right;
+	width: 100%;
+}
+.IndexProductBox
+{
+	width: 980px;
+}
+/* ------------------------------------------ProductIndexRepeaterDataList-----------------------------------*/
+#ProductIndexRepeaterDataList
+{
+	float: right;
+	width: 100%;
+}
+
+#ProductIndexRepeaterDataList .Item
+{
+	width: 228px;
+	height: 400px;
+	float: right;
+	margin-right: 24px;
+	margin-left: 20px;
+	margin-top: 40px;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	background-image: url(../Administrator/Files/Design/ProductBox.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border: solid 1px #dda7a7;
+}
+#ProductIndexRepeaterDataList .Item:hover
+{
+	box-shadow: 0px 0px 7px #888;
+}
+#ProductIndexRepeaterDataList .Item .ItemTitle
+{
+	float: right;
+	color: #333;
+	text-align: center;
+	font-size: 12pt;
+	margin-top: 16px;
+	width: 220px;
+	height: 20px;
+	text-align: right;
+	overflow: hidden;
+	padding-right: 10px;
+}
+#ProductIndexRepeaterDataList .Item .ItemTitle:hover
+{
+	color: #ed1b24;
+}
+
+#ProductIndexRepeaterDataList .Item .ItemImageLink
+{
+	width: 100%;
+	height: 199px;
+	float: right;
+	text-align: center;
+	margin-top: 1px;
+}
+
+#ProductIndexRepeaterDataList .Item .ItemImage
+{
+	max-width: 225px;
+	height: 199px;
+	border: 0px;
+	padding: 0px;
+}
+#ProductIndexRepeaterDataList .Item .ItemDesc
+{
+	float: right;
+	width: 208px;
+	text-align: justify;
+	height: 83px;
+	overflow: hidden;
+	padding: 10px 10px 0 10px;
+	color: #888;
+}
+#ProductIndexRepeaterDataList .Item .ItemDesc p
+{
+	margin: 0;
+}
+#ProductIndexRepeaterDataList .Item .ItemPrice
+{
+	float: right;
+	width: 220px;
+	font-size: 12pt;
+	margin-top: 1px;
+	padding-right: 10px;
+}
+/*----------------------- Content ------------------*/
+.Content
+{
+	width: 100%;
+	text-align: center;
+	float: right;
+}
+/*--------------------------------------------ContentMain--------*/
+.ContentMainBox
+{
+	width: 100%;
+	text-align: right;
+	float: right;
+}
+.ContentMain
+{
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	float: right;
+}
+.ContentMain3
+{
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	float: right;
+	padding-bottom: 20px;
+	background-image: url(      "../Administrator/Files/Design/slide-1-1900x650.jpg" );
+	min-height: 700px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.ContentMain3 h1, h2, h3
+{
+	margin-top: 20px;
+}
+.ContentMain3 .TextMain
+{
+	margin-top: 20px;
+	float: right;
+}
+.ContentMainBoxBox
+{
+	width: 980px;
+}
+
+.sprites
+{
+	float: right;
+	cursor: pointer;
+	background-image: url(      "../Administrator/Files/Design/sprites.png" );
+	border: 0px;
+}
+
+.Sharing .Seprator
+{
+	float: right;
+	width: 1px;
+	border-left: solid 2px #cdcdcd;
+	height: 20px;
+	margin-top: 21px;
+	margin-right: 7px;
+	margin-left: 7px;
+}
+.SharingItem
+{
+	float: right;
+	margin-top: 20px;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.SharingItem div
+{
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.SharingItem:hover > div
+{
+	-webkit-transform: scale(1.16);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.SharingItem:hover > span
+{
+	color: #000;
+}
+.SharingItem span
+{
+	float: right;
+	color: #5e5e5e;
+	margin-right: 5px;
+	font-size: 8pt;
+	font-weight: bold;
+	margin-top: 2px;
+}
+.sprites1
+{
+	background-position: 0 0;
+	width: 21px;
+	height: 21px;
+	margin-right: 20px;
+}
+.sprites2
+{
+	background-position: -22px 0;
+	width: 22px;
+	height: 22px;
+	margin-top: 1px;
+}
+.sprites3
+{
+	background-position: -43px 0;
+	width: 22px;
+	height: 21px;
+}
+.sprites4
+{
+	background-position: -65px 0;
+	width: 22px;
+	height: 21px;
+	margin-right: 20px;
+}
+.sprites5
+{
+	background-position: -87px 0;
+	width: 25px;
+	height: 24px;
+}
+.sprites6
+{
+	background-position: -112px 0;
+	width: 14px;
+	height: 14px;
+	margin-top: 5px;
+}
+.sprites8
+{
+	background-position: -144px 0;
+	width: 11px;
+	height: 7px;
+	margin-right: 3px;
+	float: none;
+	border: 0px;
+}
+.SepratorBoxRight
+{
+	float: right;
+	width: 100%;
+	height: 21px;
+	background-image: url(      "../Administrator/Files/Design/SepratorBoxRight.png" );
+	margin-top: 20px;
+}
+/* ------------------------------------------Box-----------------------------------*/
+.BoxSmall
+{
+	float: right;
+	width: 240px;
+	border-top: 0;
+	margin-top: 20px;
+	border-radius: 0px;
+}
+.BoxSmall .BoxTop
+{
+	float: right;
+	width: 100%;
+	height: 46px;
+	background-color: #1F1F1F;
+	border-radius: 0px;
+	border: 1px solid #2A2A2A;
+}
+.BoxSmall .BoxTop h1, .BoxSmall .BoxTop h2
+{
+	float: right;
+	font-size: 12pt;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	line-height: 170%;
+	font-weight: normal;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image: url(      "../Administrator/Files/Design/bullet.png" );
+	background-repeat: no-repeat;
+	padding-right: 30px;
+	background-position: right;
+	padding-bottom: 5px;
+}
+.BoxSmall .BoxTop h1 a, .BoxSmall .BoxTop h2 a
+{
+	color: #fff;
+}
+.BoxSmall .BoxTop h1 a:hover, .BoxSmall .BoxTop h2 a:hover
+{
+	color: #fff;
+}
+.BoxSmall .BoxTop .TitleH2
+{
+}
+.BoxSmall .BoxCenter
+{
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 10px;
+	background-color: #1F1F1F;
+	border: 1px solid #2A2A2A;
+}
+.BoxSmall .BoxCenterFieldDynamic
+{
+	width: 205px;
+	margin-right: 22px;
+}
+.Box
+{
+	float: left;
+	width: 732px;
+	margin-top: 20px;
+}
+.Box .BoxTop
+{
+	float: right;
+	width: 100%;
+	height: 46px;
+	background-color: #1F1F1F;
+	border: 1px solid #2A2A2A;
+	border-radius: 0px;
+}
+.Box .BoxTop h1, .Box .BoxTop h2
+{
+	float: right;
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	line-height: 170%;
+	font-weight: normal;
+	margin-top: 8px;
+	margin-right: 15px;
+}
+.Box .BoxTop a
+{
+	color: #fff;
+}
+.Box .BoxTop a:hover
+{
+	color: #fff;
+}
+.Box .BoxCenter .Back
+{
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 140px;
+	color: #707070;
+}
+.Box .BoxCenter .Back:hover
+{
+	color: Red;
+}
+.Box .BoxCenter .DateRegister
+{
+	float: right;
+	color: #707070;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.Box .BoxCenter .SepTop
+{
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #707070;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.Box .BoxCenter
+{
+	float: right;
+	width: 710px;
+	color: #555;
+	min-height: 50px;
+	padding: 5px 10px 10px 10px;
+	text-align: justify;
+	font-size: 10pt;
+	border: solid 1px #2A2A2A;
+	margin-top: 8px;
+	border-radius: 0px;
+}
+.Box .BoxCenter .ImagePost
+{
+	max-width: 570px;
+}
+.Box .BoxCenter .Sep
+{
+	float: right;
+	width: 100%;
+	height: 1px;
+	border-bottom: solid 1px #e7e7e7;
+	margin-bottom: 10px;
+}
+.Box .BoxCenter .LinkFooter1
+{
+	float: right;
+	color: #585858;
+	margin-bottom: 5px;
+}
+.Box .BoxCenter .LinkFooter2
+{
+	float: left;
+	color: #585858;
+	margin-bottom: 5px;
+}
+.Box .BoxCenter .LinkFooter1:hover, .Box .BoxCenter .LinkFooter2:hover
+{
+	color: red;
+}
+
+
+/*------------------------BoxIndex----------------------------------*/
+.BoxIndex
+{
+	float: right;
+	width: 600px;
+	border-radius: 15px;
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 10px;
+	min-height: 200px;
+	color: #444;
+}
+.BoxIndex h2
+{
+	float: right;
+	font-size: 17pt;
+	color: #0096dd;
+	margin: 0;
+	padding: 0;
+	line-height: 170%;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*--------------------------------CategoryArticleShow-----------------------------------*/
+.CategoryArticleShowBox
+{
+	float: right;
+	width: 560px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #cdcdcd;
+	background-color: #f5f5f5;
+	padding: 5px 0 5px 0;
+}
+.CategoryArticleShow
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 30px;
+}
+.CategoryArticleShow li
+{
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 265px;
+}
+.CategoryArticleShow li .Item
+{
+	color: #2a3c4e;
+	font-weight: bold;
+}
+.CategoryArticleShow li .Item:hover
+{
+	color: Red;
+}
+.CategoryArticleShow li .ItemActive
+{
+	color: Red;
+}
+/*-------------------------------------------CAtegoryShow--------------------------------------------------*/
+.CategoryShowItemTop
+{
+	float: right;
+}
+.CategoryShowItemTop:hover
+{
+	color: #fef1c3;
+}
+.CategoryShowItemCenterItem
+{
+	text-align: right;
+	width: 100%;
+	float: right;
+	font-size: 11pt;
+	margin-top: 5px;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	color: #266f8f;
+}
+.CategoryShowItemCenterItem:hover
+{
+	background: #eee;
+	text-shadow: 0 1px 0 #fff;
+	position: relative;
+	border-top-color: transparent;
+	border-bottom-color: #f2f2f2;
+	-webkit-box-shadow: 0px 2px 6px #999999;
+	-moz-box-shadow: 0px 2px 6px #999999;
+	box-shadow: 0px 2px 6px #999999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+	background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(#ffffff, #f2f2f2);
+	background-image: linear-gradient(#ffffff, #f2f2f2);
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.CategoryShowItemCenterItem .Icon
+{
+	float: right;
+	margin: 8px 10px 0 5px;
+}
+
+.CategoryShowItemCenterItem span
+{
+	float: right;
+}
+.CategoryShowItemCenterItemSelect
+{
+	background: #fff;
+	text-shadow: 0 1px 0 #fff;
+	background-color: #ffffff;
+	position: relative;
+	border-top-color: transparent;
+	border-bottom-color: #f2f2f2;
+	-webkit-box-shadow: 0px 2px 6px #999999;
+	-moz-box-shadow: 0px 2px 6px #999999;
+	box-shadow: 0px 2px 6px #999999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+	background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(#ffffff, #f2f2f2);
+	background-image: linear-gradient(#ffffff, #f2f2f2);
+}
+/* ------------------------------------------FieldDynamic-----------------------------------*/
+.FieldTitle
+{
+	float: right;
+	width: 110px;
+	text-align: left;
+	font-size: 9pt;
+}
+.FieldTitle2
+{
+	text-align: right;
+	margin-right: 10px;
+}
+.FieldRadioButton
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 9pt;
+}
+.FieldCheckBox
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 8pt;
+	width: 180px;
+	margin-top: 3px;
+	text-align: right;
+}
+.FieldTextBox
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 9pt;
+	width: 190px;
+	text-align: right;
+	border: solid 1px #bcbbcb;
+	color: #555;
+}
+
+.FieldTextBox3
+{
+	float: left;
+	margin-left: 10px;
+	font-size: 9pt;
+	width: 150px;
+	text-align: right;
+	border: solid 1px #bcbbcb;
+	color: #555;
+	height: 28px;
+}
+.FieldTextBoxSearch
+{
+	width: 175px;
+	color: #777;
+}
+.FieldTextBoxLeft
+{
+	direction: ltr;
+	text-align: left;
+}
+.FieldTextBoxNumber
+{
+	width: 70px;
+	text-align: center;
+}
+.FieldTextBoxNumberSearch
+{
+	width: 60px;
+	margin-top: 4px;
+}
+.FieldUnit
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 10pt;
+	color: #cccc;
+	margin-top: 2px;
+}
+.FieldFileUpload
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 9pt;
+	width: 200px;
+	margin-top: 3px;
+}
+.FieldDropDownList
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 9pt;
+	width: 200px;
+	margin-top: 3px;
+	border: solid 1px #bcbbcb;
+}
+.FieldDropDownListSearch
+{
+	width: 175px;
+	color: #8b8a8a;
+}
+.FieldButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background-color: Transparent;
+	float: right;
+	margin-right: 120px;
+	font-size: 10pt;
+	height: 29px;
+	color: #333;
+	cursor: pointer;
+	margin-top: 10px;
+	text-align: right;
+	padding-right: 10px;
+	background-image: url(../Administrator/Files/Design/search.png);
+	height: 28px;
+	width: 107px;
+	padding-right: 34px;
+}
+
+.FieldButton:hover
+{
+	background-position: 0 -29px;
+	color:#fff;
+}
+
+.FieldButtonSearch
+{
+	margin-right: 63px;
+}
+.FieldButtonSearch2
+{
+	width: 71px;
+	padding-top: 5px;
+	height: 23px;
+	margin-bottom: 5px;
+	margin-right: 75px;
+}
+
+.FieldButtonSearch3
+{
+	float: left;
+	margin-right: 0;
+	width: 75px;
+	margin-left: 22px;
+	background-image: url(../Administrator/Files/Design/search2.png);
+}
+.FieldButtonSearch4
+{
+	background-image: url(../Administrator/Files/Design/search3.png);
+	width: 136px;
+	padding-top: 5px;
+	height: 23px;
+}
+.lblPrice
+{
+	float: right;
+	width: 135px;
+	margin-top: 14px;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 11pt;
+}
+.FieldButtonSearch2:hover
+{
+	color: #7a6600;
+}
+.FieldButtonSearch:hover
+{
+	background-position: 0 -28px;
+}
+.FieldCaptcha
+{
+	float: right;
+	margin-right: 120px;
+}
+.FormCaptcha
+{
+	float: right;
+	margin-right: 120px;
+}
+
+.Validation, .ValidationNormal
+{
+	float: right;
+	color: Red;
+	margin-right: 3px;
+	margin-top: 0px;
+	font-size: 12pt;
+}
+
+.ValidationRow
+{
+	width: 100%;
+	text-align: center;
+	color: Red;
+	font-size: 12pt;
+	float: right;
+}
+.SpanMoney
+{
+	float: right;
+	margin-right: 10px;
+	font-size: 8pt;
+	color: #8b8a8a;
+	margin-top: 5px;
+}
+.SpanTitleSearch
+{
+	float: right;
+	text-align: right;
+	font-size: 11pt;
+	margin-right: 7pt;
+	color: #8b8a8a;
+}
+.SpanRegister
+{
+	float: left;
+	font-weight: bold;
+	font-size: 9pt;
+	color: red;
+	margin-left: 20px;
+	margin-top: 4px;
+}
+
+/*------------------------------------ProductBoxRight-----------------------------*/
+.ProductBoxRight
+{
+}
+.ProductBoxRight .Item
+{
+	width: 100%;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	padding-top: 5px;
+}
+.ProductBoxRight .Item:hover
+{
+	background: #fff;
+	color: #000;
+	background-color: #ffffff;
+	position: relative;
+	border-top-color: transparent;
+	border-bottom-color: #f2f2f2;
+	-webkit-box-shadow: 0px 2px 6px #999999;
+	-moz-box-shadow: 0px 2px 6px #999999;
+	box-shadow: 0px 2px 6px #999999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+	background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(#ffffff, #f2f2f2);
+	background-image: linear-gradient(#ffffff, #f2f2f2);
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.ProductBoxRight .Seprator
+{
+	width: 100%;
+	float: right;
+	background-image: url(../Administrator/Files/Design/Sep.png);
+	height: 1px;
+	background-position: center top;
+}
+
+.ProductBoxRight .Item .ItemTitle
+{
+	width: 115px;
+	padding: 0 5px 0 5px;
+	float: right;
+	color: #ccc;
+	text-align: right;
+	font-size: 10pt;
+	line-height: 150%;
+	margin-right: 5px;
+}
+.ProductBoxRight .Item .ItemTitle:hover
+{
+	color: #000;
+}
+
+.ProductBoxRight .Item .ItemImageLink
+{
+	float: right;
+	text-align: center;
+	border: solid 1px #ccc;
+	padding: 2px;
+}
+
+.ProductBoxRight .Item .ItemImage
+{
+	width: 100px;
+	height: 90px;
+	border: 0px;
+	padding: 0px;
+}
+.ProductBoxRight .Item .DateSaleLeft
+{
+	float: right;
+	width: 100%;
+	text-align: center;
+	font-size: 9pt;
+	margin-top: 5px;
+	color: #af3333;
+}
+.ProductBoxRight .Item .Price
+{
+	float: right;
+	width: 100%;
+	text-align: center;
+	font-size: 8pt;
+	margin-top: 5px;
+	background-color: #f4f4f4;
+	color: #3380af;
+	font-weight: bold;
+}
+/*------------------------------------LinkShow-----------------------------*/
+
+.LinkShow
+{
+	float: right;
+	width: 100%;
+	margin-top: 10px;
+}
+.LinkShow .Title
+{
+	color: #2a3c4e;
+	text-align: center;
+	font-weight: bold;
+	font-size: 8pt;
+	float: right;
+	margin-right: 10px;
+}
+.LinkShow .Title:hover
+{
+	color: #000;
+}
+
+/*------------------------------------FooterLink-----------------------------*/
+#Footer
+{
+	width: 100%;
+	float: right;
+	color: #515151;
+	background-image: url(../Administrator/Files/Design/pattern1.png);
+	height: 250px;
+}
+.FooterBox
+{
+	width: 980px;
+	text-align: center;
+}
+.FooterBoxBox
+{
+	width: 980px;
+	float: right;
+	background-color: #7c7c7c;
+	height: 175px;
+	border-radius: 10px 10px 0 0;
+}
+
+.LogoFooter:hover
+{
+}
+.Sharing
+{
+	float: left;
+	width: 230px;
+}
+.SharingLeft
+{
+	float: left;
+}
+.ItemRight
+{
+	float: left;
+	width: 32px;
+	height: 32px;
+	background: url(../Administrator/Files/Design/Sprite.png) #838383;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	margin-top: 10px;
+	border-radius: 20px;
+	margin-right: 5px;
+}
+.Sprite1:hover
+{
+	background-position: 0 0;
+}
+.Sprite1
+{
+	background-position: 0 -32px;
+}
+.Sprite2:hover
+{
+	background-position: -32px 0px;
+}
+.Sprite2
+{
+	background-position: -32px -32px;
+}
+.Sprite3:hover
+{
+	background-position: -64px 0;
+}
+.Sprite3
+{
+	background-position: -64px -32px;
+}
+.Sprite4:hover
+{
+	background-position: -96px 0;
+}
+.Sprite4
+{
+	background-position: -96px -32px;
+}
+
+.Sprite5:hover
+{
+	background-position: -128px 0;
+}
+.Sprite5
+{
+	background-position: -128px -32px;
+}
+.Sprite6:hover
+{
+	background-position: -160px 0;
+}
+.Sprite6
+{
+	background-position: -160px -32px;
+}
+
+.CopyRight
+{
+	float: right;
+	width: 595px;
+	color: #fff;
+	text-align: right;
+	margin-top: 26px;
+	font-size: 8pt;
+}
+.CopyRight a
+{
+	color: #fff;
+}
+.FooterText
+{
+	float: right;
+	width: 560px;
+	height: 165px;
+	color: #fff;
+	text-align: right;
+	padding: 5px 0px 0 0px;
+	margin-right: 10px;
+}
+.FooterText a
+{
+	color: #fff;
+}
+/*------------------------------LinkShow-----------------------*/
+#LinkShow
+{
+	float: right;
+	width: 980px;
+	margin-top: 15px;
+	height: 180px;
+}
+#LinkShow .Item
+{
+	float: right;
+	width: 240px;
+	height: 180px;
+}
+
+#LinkShow .Title
+{
+	text-align: center;
+	width: 100%;
+	font-size: 15pt;
+	float: right;
+	padding-bottom: 10px;
+	color: #0096dd;
+}
+#LinkShow .ItemSub
+{
+	text-align: center;
+	width: 100%;
+	font-size: 10pt;
+	float: right;
+	margin-top: 5px;
+}
+#LinkShow .ItemSub a
+{
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	float: right;
+	width: 100%;
+	color: #dedede;
+}
+
+#LinkShow .ItemSub a:hover
+{
+	color: #0096dd;
+}
+
+
+/*------------------------------------RepeaterIndex2-----------------------------*/
+.RepeaterIndex2Item
+{
+	float: right;
+	width: 710px;
+	height: 130px;
+	margin-top: 10px;
+
+		background-image: url(../Administrator/Files/Design/dottedline.gif);
+		background-repeat:repeat-x;
+		background-position:bottom;
+}
+.RepeaterIndex2Item:hover
+{
+color:#0096dd;
+}
+.RepeaterIndex2Item:hover > h3
+{
+	color: #0096dd;
+}
+
+.RepeaterIndex2Item .ImageBox
+{
+	float: right;
+	width: 105px;
+	height: 105px;
+	border: solid 1px #ccc;
+	border-radius: 1px;
+	padding: 4px;
+	text-align: center;
+	background-color:#eee;
+}
+.RepeaterIndex2Item .Image
+{
+	width: 100px;
+	height: 100px;
+}
+.RepeaterIndex2Item .Text
+{
+  float: right;
+  font-size: 9pt;
+  color: #555;
+  width: 580px;
+  margin-right: 10px;
+  text-align: right;
+  margin-top: 5px;
+}
+.RepeaterIndex2Item h3
+{
+color: #0f91af;
+  float: right;
+  padding: 0;
+  margin: 0;
+  font-size: 11pt;
+  width: 100%;
+  margin-top: 3px;
+  line-height: 150%;
+  font-weight: normal;
+  text-align: center;
+  width: 530px;
+  text-align: right;
+  margin-right: 10px;
+}
+.RepeaterIndex2Item .date
+{
+font-size: 9pt;
+  color: #969696;
+  float: right;
+  width: 500px;
+  margin-right: 11px;
+  margin-top: 5px;
+}
+/*------------------------------------RepeaterDataList-----------------------------*/
+.RepeaterDataList
+{
+	float: right;
+	width: 100%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.RepeaterDataList .Title
+{
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.RepeaterDataList .Item
+{
+	float: right;
+	width: 147px;
+	height: 100px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	padding: 4px;
+	text-align: center;
+	background-color: #dde4f8;
+	cursor: pointer;
+	text-shadow: 0 1px 0 #fff;
+	color: #000;
+	position: relative;
+	border-top-color: transparent;
+	border-bottom-color: #f2f2f2;
+	-webkit-box-shadow: 0px 2px 6px #999999;
+	-moz-box-shadow: 0px 2px 6px #999999;
+	box-shadow: 0px 2px 6px #999999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.RepeaterDataList .Item:hover
+{
+	background-color: #eee;
+}
+.RepeaterDataList .Item .ItemImage
+{
+	max-width: 147px;
+	height: 100px;
+}
+/*------------------------------------RepeaterIndexItem-----------------------------*/
+
+.RepeaterIndexItem
+{
+	float: right;
+	width: 300px;
+	margin-right: 13px;
+	margin-top: 10px;
+	border-radius: 5px;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	text-align: right;
+	padding-top: 0px;
+}
+.RepeaterIndexItem:hover
+{
+	background-color: #f5f6f8;
+	cursor: pointer;
+	text-shadow: 0 1px 0 #fff;
+	color: #000;
+	position: relative;
+	border-top-color: transparent;
+	border-bottom-color: #f2f2f2;
+	-webkit-box-shadow: 0px 2px 6px #999999;
+	-moz-box-shadow: 0px 2px 6px #999999;
+	box-shadow: 0px 2px 6px #999999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+.RepeaterIndexItem:hover > h3
+{
+	color: #ad0100;
+}
+
+.RepeaterIndexItem .ImageBox
+{
+	float: right;
+	width: 190px;
+	height: 100px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	padding: 4px;
+}
+.RepeaterIndexItem .Image
+{
+	width: 190px;
+	height: 100px;
+	float: right;
+}
+.RepeaterIndexItem h3
+{
+	color: #555;
+	float: right;
+	padding: 0;
+	margin: 0;
+	font-size: 9pt;
+	width: 100%;
+	margin-top: 3px;
+	line-height: 150%;
+	font-weight: normal;
+	background-image: url(../Administrator/Files/Design/Puce.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 15px;
+}
+.RepeaterCustomerUsIndex
+{
+	margin-top: 10px;
+	float: right;
+	width: 100%;
+	text-align: center;
+}
+.Archive
+{
+	float: left;
+	height: 20px;
+	padding: 3px 20px 3px 20px;
+	background-color: #444;
+	color: #fff;
+	font-size: 8pt;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 3px;
+}
+
+.Archive:hover
+{
+	background-color: #666;
+	color: #fff;
+}
+/*------------------------------------BasketShopSmall-----------------------------*/
+.BasketShopSmallRow
+{
+	float: right;
+	width: 100%;
+	margin-top: 4px;
+}
+
+.BasketShopSmallRowArow
+{
+	float: right;
+	text-align: right;
+	margin-top: 7px;
+}
+.BasketShopSmallRowLink
+{
+	float: right;
+	width: 123px;
+	text-align: right;
+	margin-right: 5px;
+}
+.BasketShopSmallRowPic
+{
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-right: 2px;
+}
+.BasketShopSmallRowPriceTitle
+{
+	color: Red;
+}
+.BasketShopSmallRowPrice
+{
+	color: green;
+}
+
+.BasketShopSmallRowSpace
+{
+	float: right;
+	width: 100%;
+	height: 1px;
+	margin-top: 3px;
+	border-top: gray 1px dotted;
+}
+.OneLine
+{
+	width: 100%;
+	text-align: center;
+	float: right;
+}
+
+.BasketShopSmallLinkAll
+{
+	font-weight: bold;
+	text-align: center;
+}
+.BasketShopSmallLinkAll:hover
+{
+	color: Red;
+}
+.BasketShopSmallLabel
+{
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-right: 15px;
+	width: 165px;
+}
+.BasketShopSmallLabelMSG
+{
+	font-weight: bold;
+	text-align: center;
+	float: right;
+	margin-right: 15px;
+	width: 165px;
+	color: Green;
+}
+
+.BasketShopSmallField
+{
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	font-family: BYekan,Tahoma;
+	width: 165px;
+	margin-right: 15px;
+}
+.BasketShopSmallButton
+{
+	float: right;
+	width: 70px;
+	height: 30px;
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: BYekan,Tahoma;
+	border: solid 1px silver;
+	text-align: center;
+	margin-right: 113px;
+	margin-top: 10px;
+	cursor: pointer;
+	background-color: white;
+	padding: 8px;
+	margin-bottom: 10px;
+}
+
+.BasketShopSmallButton:hover
+{
+	background-color: #E2E2E2;
+	border: solid 1px silver;
+}
+/*-------GridArchive------------*/
+.NewsRow
+{
+	float: right;
+	width: 100%;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	margin-bottom: 10px;
+	padding-top: 10xp;
+}
+.NewsRow:hover
+{
+	background: #fff;
+	text-shadow: 0 1px 0 #fff;
+	color: #000;
+	background-color: #ffffff;
+	position: relative;
+	border-top-color: transparent;
+	border-bottom-color: #f2f2f2;
+	-webkit-box-shadow: 0px 2px 6px #999999;
+	-moz-box-shadow: 0px 2px 6px #999999;
+	box-shadow: 0px 2px 6px #999999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+	background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(#ffffff, #f2f2f2);
+	background-image: linear-gradient(#ffffff, #f2f2f2);
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.GridItemImage
+{
+	float: right;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 8px;
+}
+.GridItemTitle
+{
+	float: right;
+	font-weight: bold;
+	font-size: 9pt;
+}
+.GridItemTitle:hover
+{
+	color: #000;
+}
+.GridItemText
+{
+	float: right;
+	padding: 5px;
+	color: black;
+	font-size: 8pt;
+	text-align: justify;
+}
+.GridItemUnderText
+{
+	float: right;
+	margin-top: 5px;
+	color: #666666;
+	font-size: 8pt;
+	text-align: right;
+}
+.GridSeprator
+{
+	border-bottom: dotted 1px gray;
+	float: right;
+	width: 100%;
+}
+.GridPaging
+{
+	text-align: center;
+}
+.GridPaging table
+{
+	margin: 5px 0;
+}
+.GridPaging td
+{
+	border-width: 0;
+	padding: 0 6px;
+	font-weight: bold;
+	color: red;
+	line-height: 12px;
+}
+
+
+/*------------------------------Tooltip----------------------------------------------*/
+.tooltip2
+{
+	position: relative;
+	cursor: help;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.tooltip2 span
+{
+	color: Black;
+	visibility: hidden;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	z-index: 9999999999999;
+	width: 290px;
+	margin-left: -157px;
+	padding: 10px;
+	border: 2px solid #ccc;
+	opacity: 1;
+	background-color: #FFFFCC;
+	background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	-moz-border-radius: 4px;
+	border-radius: 15px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+.tooltip2:hover
+{
+	border: 0; /* IE6 fix */
+}
+.tooltip2:hover span
+{
+	visibility: visible;
+}
+.tooltip2 span:before, .tooltip2 span:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1000;
+	bottom: -7px;
+	left: 50%;
+	margin-left: -8px;
+	border-top: 8px solid #FFFFCC;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 0;
+}
+.tooltip2 span:before
+{
+	border-top-color: #ccc;
+	bottom: -8px;
+}
+/*------------------------------RepeaterGrid----------------------------------------------*/
+.RepeaterGrid
+{
+	float: right;
+	width: 100%;
+}
+.RepeaterGrid .Row
+{
+	float: right;
+	width: 100%;
+	margin-top: 1px;
+}
+.RepeaterGrid .Row:hover
+{
+}
+.RepeaterGrid .Row .ColNotHover
+{
+	float: right;
+	width: 85px;
+	text-align: center;
+	margin-right: 2px;
+	border: solid 1px gray;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.RepeaterGrid .Row .Col
+{
+	float: right;
+	width: 85px;
+	text-align: center;
+	margin-right: 2px;
+	border: solid 1px gray;
+	height: 30px;
+	border-radius: 5px;
+}
+.RepeaterGrid .Row .Col:hover
+{
+	background-color: #CCCCCC;
+}
+.RepeaterGrid .RowOne .Col
+{
+	height: auto;
+	background-color: yellow;
+}
+.RepeaterGrid .RowTwo .Col
+{
+	height: 50px;
+}
+.RepeaterGrid .Row .ColAuto
+{
+	height: auto;
+	min-height: 30px;
+}
+
+.RepeaterGrid .Row .Header
+{
+	font-weight: bold;
+	background-color: #999999;
+	border: solid 1px gray;
+	margin-top: 2px;
+	height: auto;
+	color: Black;
+	border-radius: 5px;
+}
+
+.GridRow
+{
+	background-color: #CCCCCC;
+	height: 20px;
+}
+.GridRow:hover
+{
+	background-color: #ffff00;
+}
+.GridRowAlternating
+{
+	height: 20px;
+	background-color: #ffffff;
+}
+.GridRowAlternating:hover
+{
+	background-color: #ffff00;
+}
+.GridShop
+{
+	width: 100%;
+	margin-top: 0px;
+	font-size: 9pt;
+}
+
+/*------------------------------FactorRegister----------------------------------- */
+.FactorRegisterRow
+{
+	float: right;
+	width: 100%;
+	margin-top: 10px;
+}
+.FactorRegisterRowButton
+{
+	float: left;
+	margin-left: 0px;
+}
+.FactorRegisterDivGrid
+{
+	float: right;
+	border: solid 5px #DED6CB;
+	background-color: #F6F5F1;
+	width: 700px;
+}
+
+.FactorRegisterGridImage
+{
+	float: right;
+	width: 70px;
+}
+
+.FactorRegisterGridTitle
+{
+	float: right;
+	margin-top: 10px;
+	width: 186px;
+	margin-right: 10px;
+	text-align: right;
+}
+.FactorRegisterGridPrice
+{
+	float: right;
+	width: 97px;
+	text-align: center;
+	margin-top: 10px;
+}
+.FactorRegisterGridCount
+{
+	float: right;
+	width: 35px;
+	font-size: 8pt;
+	font-family: BYekan,Tahoma;
+	margin-top: 10px;
+	border: solid 1px #ccc;
+}
+
+.FactorRegisterCalc
+{
+	float: right;
+	border-bottom: solid 5px #DED6CB;
+	border-left: solid 5px #DED6CB;
+	border-right: solid 5px #DED6CB;
+	background-color: #F6F5F1;
+	width: 700px;
+}
+.FactorRegisterCalcRow2
+{
+	float: left;
+	width: 265px;
+}
+
+.FactorRegisterCalcRow
+{
+	float: left;
+	width: 310px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.FactorRegisterCalcField
+{
+	float: left;
+	width: 100px;
+	text-align: center;
+	color: Red;
+	font-weight: bold;
+}
+
+.FactorRegisterCalcTitle
+{
+	float: left;
+	text-align: left;
+	margin-left: 5px;
+}
+.FactorRegisterCalcTitle input
+{
+	float: right;
+	margin-top: 3px;
+}
+.FactorRegisterWarning
+{
+	float: right;
+	width: 450px;
+	margin-top: 5px;
+	text-align: right;
+}
+.FactorRegisterCodeDiscountBox
+{
+	float: right;
+	width: 200px;
+}
+.FactorRegisterCodeDiscount
+{
+	margin-bottom: 20px;
+	width: 440px;
+	float: right;
+	margin-top: 110px;
+	background-image: url(../Administrator/Files/Design/DiscountPic.jpg);
+	height: 130px;
+	margin-right: 20px;
+}
+.FactorRegisterCodeDiscount .Title
+{
+	float: right;
+	width: 150px;
+	text-align: left;
+}
+.FactorRegisterCodeDiscount .TextBox
+{
+	text-align: center;
+	direction: ltr;
+	float: right;
+	margin-right: 5px;
+	font-size: 10pt;
+	margin-top: 2px;
+	border: solid 1px gray;
+	width: 150px;
+}
+.FactorRegisterCodeDiscount .Button
+{
+	margin-top: 0;
+	font-size: 10pt;
+	height: 23px;
+	border: solid 1px gray;
+	width: 50px;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+.FactorRegisterCodeDiscount .Button:hover
+{
+	background-color: #ccc;
+}
+.FactorRegisterCodeDiscount .Val
+{
+	float: right;
+	color: Red;
+	margin-right: 3px;
+	margin-top: 3px;
+}
+.FactorRegisterCodeDiscount .FormCaptcha
+{
+	float: right;
+	margin-right: 10px;
+}
+.InsertAlert
+{
+	margin-right: 10px;
+	color: Red;
+	font-size: 10pt;
+	margin-top: 25px;
+	float: right;
+}
+/*------------------------------------Paging-----------------------------*/
+.Paging
+{
+	width: 100%;
+	float: right;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.Paging .Item
+{
+	width: 20px;
+	float: right;
+	padding: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1px #e8e8e8;
+	background-color: #f2f2f2;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 3px;
+	-moz-border-radius: 4px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	text-shadow: 0 1px 0 rgba(255,255,255,.4);
+	color: #777;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.Paging .ItemNow
+{
+	width: 20px;
+	float: right;
+	padding: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1px #919090;
+	background-color: #ddd;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 3px;
+	-moz-border-radius: 4px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	text-shadow: 0 1px 0 rgba(255,255,255,.4);
+	color: #333;
+}
+.Paging .Item:hover
+{
+	background-color: #ddd;
+	border: solid 1px #919090;
+	color: #333;
+}
+.Paging .ItemSep
+{
+	width: 5px;
+	float: right;
+	padding: 3px;
+	font-weight: bold;
+	margin-top: 3px;
+	margin-left: 5px;
+	color: #000;
+}
+
+.Paging .DivDown
+{
+	float: right;
+	width: 100%;
+}
+.Paging .First
+{
+	float: right;
+	margin: 10px;
+}
+
+.Paging .Last
+{
+	float: left;
+	margin: 10px;
+}
+.Paging .SpanLeft
+{
+	float: left;
+	color: #999;
+	font-size: 9pt;
+	margin-top: 9px;
+}
+
+/*------------------------------------AdsShow---------------------------------*/
+.ProductShow
+{
+	width: 100%;
+	text-align: center;
+	float: right;
+}
+.ProductShow .ItemRow
+{
+	float: right;
+	width: 100%;
+	margin-top: 15px;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.ProductShow .ItemRow:hover
+{
+}
+.ProductShow .Left
+{
+	width: 685px;
+	border: solid 1px #2A2A2A;
+	margin-right: 0px;
+	float: right;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.ProductShow .ItemImage
+{
+	max-width: 220px;
+	height: 120px;
+}
+
+.ProductShow .ItemPrice
+{
+	float: right;
+	font-size: 12pt;
+	text-align: center;
+	color: #db2222;
+	width: 100%;
+	padding: 3px 0 3px 0;
+	background-color: #1F1F1F;
+	border-top: 1px solid #2A2A2A;
+	margin-top: 5px;
+}
+.ProductShow .ItemTitle
+{
+	float: right;
+	font-size: 13pt;
+	text-align: right;
+	color: #db2222;
+	margin-top: 5px;
+}
+.ProductShow .ItemTitle:hover
+{
+	color: #707070;
+}
+
+
+.ProductShow .Right
+{
+	width: 320px;
+	float: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.ProductShow .RightLeft
+{
+	width: 322px;
+	float: right;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+	color: #ccc;
+}
+.AdsDetailLeftBoxTitle
+{
+	color: #266f8f;
+	font-size: 8pt;
+	float: right;
+	margin-left: 10px;
+}
+.AdsDetailLeftBoxValue
+{
+	color: #6d6d6d;
+	font-size: 10pt;
+	float: right;
+}
+.AdsDetailLeftBoxUnit
+{
+	color: #266f8f;
+	font-size: 8pt;
+	float: right;
+	margin-right: 10px;
+}
+.AdsDetailLeftBoxButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background-color: Transparent;
+	float: right;
+	width: 131px;
+	height: 32px;
+	background-image: url(../Administrator/Files/Design/Button.png);
+	cursor: pointer;
+	border-radius: 0;
+	margin-top: 10px;
+}
+.AdsDetailLeftBoxButton1
+{
+	background-position: 0 0;
+	width: 116px;
+	float: right;
+}
+.AdsDetailLeftBoxButton1:hover
+{
+	background-position: 0 -32px;
+	color: #fff;
+}
+.AdsDetailLeftBoxButton2
+{
+	background-position: -116px 0;
+	width: 128px;
+}
+.AdsDetailLeftBoxButton2:hover
+{
+	background-position: -116px -32px;
+}
+.AdsDetailLeftBoxButton3
+{
+	background-position: -244px 0;
+	width: 128px;
+}
+.AdsDetailLeftBoxButton3:hover
+{
+	background-position: -244px -32px;
+}
+.ProductPath
+{
+	float: right;
+	margin-top: 8px;
+	color: #ccc;
+}
+.ProductPath a
+{
+	font-size: 9pt;
+	text-align: right;
+	color: #ccc;
+}
+.ProductPath a:hover
+{
+	color: #db2222;
+}
+
+/*----------------------------TabShow------------------------*/
+.TabShow
+{
+	float: right;
+	width: 688px;
+	border: solid 1px #2A2A2A;
+	background-color: #1F1F1F;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: justify;
+	color: #ccc;
+}
+
+.TabShowTop
+{
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 100%;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-top: 20px;
+	background-color: #03a6f9;
+	color: #fff;
+	padding: 10px 0 10px 0;
+}
+
+
+
+/* ------------------------------------------Poll-----------------------------------*/
+.PollTitle
+{
+	float: right;
+	color: #5a5a5b;
+	font-weight: bold;
+	text-align: right;
+	font-size: 9pt;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.PollOption
+{
+	float: right;
+	color: #5a5a5b;
+	margin-right: 10px;
+	text-align: right;
+	font-size: 9pt;
+}
+
+.PollResult
+{
+	float: right;
+	color: #5a5a5b;
+	margin-right: 8px;
+	text-align: right;
+	width: 330px;
+	margin-top: 2px;
+}
+.PollResultItem
+{
+	float: right;
+	text-align: right;
+	height: 15px;
+	background-color: #CCCCCC;
+	color: #5a5a5b;
+	font-weight: bold;
+}
+.PollResultItemTitle
+{
+	width: 100%;
+	float: right;
+	margin-top: 0px;
+	color: #5a5a5b;
+	font-size: 9pt;
+}
+.PollButton
+{
+	width: 100%;
+	float: right;
+}
+.PollButton .Button
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background-color: Transparent;
+	float: right;
+	font-size: 9pt;
+	width: 171px;
+	height: 29px;
+	background-image: url(../Administrator/Files/Design/PostAds.png);
+	color: White;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: right;
+	padding-right: 10px;
+	margin-right: 25px;
+}
+.PollButton .Button:hover
+{
+	background-position: 0 -29px;
+}
+
+
+
+/*--------------------------------------Baner---------------------------*/
+.AdsBanerDiv
+{
+	overflow: hidden;
+	margin-top: 10px;
+	width: 218px;
+	float: right;
+	border: solid 1px #bbb;
+	background-color: #f0f0f0;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+.AdsBanerA
+{
+	float: right;
+	width: 100%;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	font-size: 10pt;
+	color: #555;
+	text-align: center;
+}
+.AdsBanerA:hover
+{
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+
+/*---------------------Tag------------------------*/
+.TagDetailBox
+{
+	background-color: #1F1F1F;
+	border: 1px solid #2A2A2A;
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-top: 8px;
+	padding-bottom: 13px;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.TagDetailBox .TagImage
+{
+	float: right;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+	margin-top: 7px;
+}
+.TagDetailBox .Item
+{
+	float: right;
+	padding: 0 5px 0 5px;
+	border: solid 1px #e2e2e2;
+	margin-right: 5px;
+	margin-top: 5px;
+	background-color: #f4f4f4;
+	font-size: 8pt;
+	border-radius: 3px;
+}
+.TagDetailBox .Item:hover
+{
+	background-color: #eee;
+}
+
+
+/*------------------------------------------FactorPrint-----------------------------*/
+.FactorPrint
+{
+	float: right;
+	border: solid 1px #333;
+	width: 700px;
+	padding: 4px;
+	color: #000;
+	font-size: 9pt;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.FactorPrintHeader
+{
+	float: right;
+	width: 698px;
+	background-image: url(../Administrator/Files/Design/FactorPrintHeader.jpg);
+	border: solid 1px #999;
+	height: 85px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.FactorPrintHeader .Left
+{
+	float: left;
+	width: 200px;
+}
+.FactorPrintCenter
+{
+	float: right;
+	width: 630px;
+	border: solid 1px #999;
+	margin-top: 5px;
+	padding: 10px 34px 10px 34px;
+	background-color: #eee;
+}
+.FactorPrintCenter .FactorTitle
+{
+	float: right;
+	width: 100%;
+	font-weight: bold;
+	text-align: right;
+	border-bottom: dotted 1px #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.FactorPrintCenter .FactorTitle a
+{
+	float: left;
+	color: #000;
+	font-weight: normal;
+}
+.FactorPrintCenter .FactorTitle a:hover
+{
+	color: Red;
+}
+.FactorPrintCenter .FactorTitleFooter
+{
+	float: right;
+	width: 100%;
+	text-align: center;
+	font-size: 8pt;
+}
+
+.Darsad
+{
+	width: 50%;
+}
+
+.FactorPrintCalcField
+{
+	float: left;
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.FactorPrintCalcTitle
+{
+	float: left;
+	text-align: left;
+	margin-left: 5px;
+}
+.FactorPrintPriceUnit
+{
+	float: left;
+	width: 25px;
+}
+
+.PaymentFactorID
+{
+	border: double 3px #ccc;
+	float: right;
+	width: 203px;
+	padding: 10px;
+	text-align: justify;
+	font-size: 10pt;
+	background-color: #F5F5F5;
+	margin-top: 10px;
+}
+.PaymentFactorID:hover
+{
+	border: double 3px #aaa;
+}
+.PaymentOnlineBox
+{
+	border: double 3px #ccc;
+	float: right;
+	width: 230px;
+	height: 100px;
+	text-align: justify;
+	font-size: 8pt;
+	background-color: #F5F5F5;
+	margin-right: 0px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(../Administrator/Files/Design/PasargadPayment.png);
+	cursor: pointer;
+}
+.PaymentOnlineBox2
+{
+	background-image: url(../Administrator/Files/Design/PasargadPayment2.png);
+}
+.PaymentOnlineBox3
+{
+	background-image: url(../Administrator/Files/Design/PasargadPayment3.png);
+}
+.PaymentOnlineBox4
+{
+	background-image: url(../Administrator/Files/Design/PasargadPayment4.jpg);
+}
+.PaymentOnlineBox:hover
+{
+	border: double 3px #aaa;
+}
+.PardakhtMahal
+{
+	background-image: url(../Administrator/Files/Design/PardakhtMahal.jpg);
+}
+
+/*-----------------------------------------Basketcontainer---------------------------------*/
+.Basketcontainer
+{
+	float: left;
+	margin-top: 4px;
+	width: 100px;
+	height: 26px;
+}
+.BasketcontainerBox
+{
+	position: absolute;
+}
+
+.signin
+{
+	text-align: right;
+	color: #b7b7b7;
+	padding: 5px 7px 3px 25px;
+	background-image: url(      "../Administrator/Files/Design/toggle_down_light.png" );
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 25px;
+	float: right;
+	font-size: 12pt;
+}
+.signin:hover
+{
+	color: #fff;
+}
+.BasketcontainerImage
+{
+	float: right;
+	width: 32px;
+	height: 24px;
+	margin-left: 10px;
+}
+
+.signin.menu-open
+{
+	background-image: url(      "../Administrator/Files/Design/toggle_up_dark.png" );
+}
+#small_signup
+{
+	display: inline;
+	float: none;
+	width: 170px;
+}
+
+#signin_menu
+{
+	display: none;
+	position: absolute;
+	width: 210px;
+	z-index: 99999999999999999999999999;
+	border: 0;
+	text-align: left;
+	padding: 0px;
+	font-size: 10pt;
+	left: 0;
+	border-top: 0;
+	margin-top: 41px;
+}
+.ProductBoxRight2 .Item .ItemTitle
+{
+	color: #fff !important;
+}
+.ProductBoxRight2 .Item:hover .ItemTitle
+{
+	color: #000 !important;
+}
+
+.BoxSmall2
+{
+	float: right;
+	width: 280px;
+	border-top: 0;
+	background-color: #fff;
+	box-shadow: 0px 0px 7px #000000 inset;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.BoxSmall2 .BoxTop
+{
+	float: right;
+	width: 100%;
+	height: 30px;
+	background-color: #888;
+}
+.BoxSmall2 .BoxTop h1, .BoxSmall2 .BoxTop h2
+{
+	float: right;
+	font-size: 11pt;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	line-height: 170%;
+	font-weight: normal;
+	margin-right: 10px;
+	margin-top: 3px;
+	font-weight: normal;
+}
+.BoxSmall2 .BoxCenter
+{
+	float: right;
+	width: 260px;
+	text-align: right;
+	padding-bottom: 10px;
+	padding: 10px;
+}
+
+
+/*-------------------------Step-------------------------*/
+.OrderRepairStep2
+{
+	float: right;
+	width: 540px;
+	padding-bottom: 6px;
+	padding-top: 0px;
+	padding-right: 170px;
+}
+
+.OrderRepairStep2 .ItemBox
+{
+	float: right;
+}
+.OrderRepairStep2 .ItemBoxCenter
+{
+	background-image: url(../Administrator/Files/Design/arrow-Down.jpg);
+	height: 25px;
+	width: 30px;
+	float: right;
+	margin-top: 18px;
+}
+.OrderRepairStep2 .Item
+{
+	float: right;
+	height: 45px;
+	text-align: center;
+	font-size: 10pt;
+	margin-top: 10px;
+	padding: 0px 15px 0px 15px;
+	background-color: #bfbfbf;
+	color: #000;
+	border: solid 1px #474545;
+	border-radius: 3px;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	cursor: pointer;
+}
+.OrderRepairStep2 .Item:hover
+{
+	border: solid 1px #474545;
+	background-color: Green;
+	color: #fff;
+}
+.OrderRepairStep2 .ItemCenter
+{
+	padding-top: 12px;
+	height: 33px;
+}
+
+.OrderRepairStep2 .Active
+{
+	border: solid 1px #474545;
+	background-color: Green;
+	color: #fff;
+}
+
+/*---------------------------Step1Box------------------*/
+.Step1Box .Title
+{
+	float: right;
+	font-weight: bold;
+	width: 100px;
+	text-align: left;
+	margin-left: 10px;
+}
+.Step1Box .Value
+{
+	float: right;
+}
+
+
+/*-------------------------Step-------------------------*/
+.NavBox
+{
+	float: right;
+	background-color: #1F1F1F;
+	width: 710px;
+	box-shadow: 0px 2px 16px #2A2A2A;
+}
+.OrderRepairStep
+{
+	float: right;
+	width: 710px;
+}
+.OrderRepairStep .Item
+{
+	float: right;
+	text-align: center;
+	font-size: 10pt;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 0px 5px 5px 5px;
+	border-bottom: solid 1px #aaa;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.OrderRepairStep .Item:hover
+{
+	color: #ff0000;
+	border-bottom: solid 1px #fb5235;
+}
+
+.OrderRepairStep .Active
+{
+	color: #ff0000;
+	border-bottom: solid 1px #fb5235;
+}
+
+/*------------------------------------RepeaterDataList-----------------------------*/
+#RepeaterDataList
+{
+	float: right;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#RepeaterDataList .Item
+{
+	width: 165px;
+	height: 155px;
+	border: 1px solid #CCCCCC;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	background-color: #FFFFFF;
+}
+
+#RepeaterDataList .Item:hover
+{
+}
+
+#RepeaterDataList .Item .ItemImage
+{
+	width: 135px;
+	height: 110px;
+	margin-right: 15px;
+	margin-top: 10px;
+	float: right;
+}
+#RepeaterDataList .Item .ItemLink
+{
+	width: 156px;
+	padding: 5px;
+	float: right;
+	color: Black;
+	text-align: center;
+}
+#RepeaterDataList .Item .ItemLink:hover
+{
+	color: #870301;
+}
+.ProductRightLeftimage
+{
+	float: right;
+	width: 66px;
+	height: 47px;
+	background-image: url(../Administrator/Files/Design/360.jpg);
+	margin-right: 28px;
+}
+
+/*------------------------------------SharingDeal-----------------------------*/
+
+
+.SharingDeal
+{
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-image: url(../Administrator/Files/Design/Sharing.png);
+	margin-left: 10px;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.SharingDeal1
+{
+	background-position: 0 0;
+}
+.SharingDeal1:hover
+{
+	background-position: 0 -20px;
+}
+.SharingDeal2
+{
+	background-position: 20px 0;
+}
+.SharingDeal2:hover
+{
+	background-position: 20px -20px;
+}
+.SharingDeal3
+{
+	background-position: 40px 0;
+}
+.SharingDeal3:hover
+{
+	background-position: 40px -20px;
+}
+.SharingDeal4
+{
+	background-position: 60px 0;
+}
+.SharingDeal4:hover
+{
+	background-position: 60px -20px;
+}
+.SharingDeal5
+{
+	background-image: url(../Administrator/Files/Design/addtofavorite.png);
+	width: 150px;
+	height: 13px;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+	margin-top: 10px;
+	color: #333;
+}
+.AddToBasket2
+{
+	background-color: #ed1b24;
+	float: right;
+	color: #fff;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.AddToBasket2:hover
+{
+	color: #333;
+	cursor: pointer;
+}
+.Detail2
+{
+	background-color: #777;
+	float: right;
+	color: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+.Detail2:hover
+{
+	color: #333;
+	cursor: pointer;
+}
+.FieldButtonSearch1
+{
+	float: left;
+	color: #333;
+	width: 133px;
+	height: 28px;
+	background-color: Transparent;
+	border: none;
+	border-radius: 0;
+	margin-left: 20px;
+	font-size: 13pt;
+	background-image: url(../Administrator/Files/Design/btnsearchHover.png);
+}
+.FieldButtonSearch1:hover
+{
+	color: #fff;
+	cursor: pointer;
+	background-image: url(../Administrator/Files/Design/btnsearch.png);
+}
+.ArabLang
+{
+	color: #fff;
+	float: right;
+	width: 22px;
+	height: 20px;
+	margin-top: 18px;
+	margin-right: 0px;
+	margin-left: 10px;
+	background-image: url(../Administrator/Files/Design/arab.jpg);
+}
+.EnLang
+{
+	color: #fff;
+	float: left;
+	width: 22px;
+	height: 20px;
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-image: url(../Administrator/Files/Design/en.png);
+}
+.FaLang
+{
+	color: #fff;
+	float: left;
+	width: 22px;
+	height: 20px;
+	margin-top: 15px;
+	background-image: url(../Administrator/Files/Design/fa.png);
+	margin-right: 5px;
+}
+.ContentMainBoxBoxLeft
+{
+	float: left;
+	width: 735px;
+	margin-right: 5px;
+}
+.ContentMainBoxBoxRight
+{
+	float: right;
+	width: 240px;
+}
+.UserLoginUser2
+{
+	width: 287px;
+	margin-top: 0;
+}
+.UserRegister2
+{
+	float: right;
+	width: 330px;
+}
+.UserForgetPassword2
+{
+	font-size: 11pt;
+	margin-right: 20px;
+	margin-top: 15px;
+	float: right;
+}
+/* ------------------------------------------ProductLeft-----------------------------------*/
+.ProductLeft
+{
+	float: right;
+	width: 100%;
+}
+.ProductLeft .ProductImageBox
+{
+	float: right;
+	width: 340px;
+	height: 220px;
+}
+.ProductLeft .ProductImage
+{
+	float: right;
+	width: 340px;
+	height: 220px;
+}
+.ProductMorePic
+{
+	float: right;
+	width: 76px;
+	height: 77px;
+	margin-right: 4px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border: 1px solid #d7d7d7 !important;
+}
+.ServiceBoxShadow
+{
+	float: right;
+	background-image: url(../Administrator/Files/Design/ShadowSlide.png);
+	width: 100%;
+	height: 399px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.ServiceBox
+{
+	float: right;
+	background-color: #292929;
+	height: 375px;
+	width: 100%;
+}
+.Service3
+{
+	float: right;
+	background-image: url(../Administrator/Files/Design/Service3.png);
+	width: 224px;
+	height: 203px;
+	margin-top: 100px;
+	margin-right: 80px;
+}
+.Service2
+{
+	float: right;
+	background-image: url(../Administrator/Files/Design/Service2.png);
+	width: 222px;
+	height: 203px;
+	margin-top: 100px;
+	margin-right: 80px;
+}
+.Service1
+{
+	float: right;
+	background-image: url(../Administrator/Files/Design/Service1.png);
+	width: 220px;
+	height: 203px;
+	margin-top: 100px;
+	margin-right: 80px;
+}
+/*-----------------------navCategory ------------------*/
+.navCategory
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 980px;
+}
+.navCategory li
+{
+	float: right;
+	display: block;
+	position: relative;
+	z-index: 1000000;
+	margin: 0;
+	height: 55px;
+}
+.navCategory li:hover > a
+{
+}
+.navCategory li:hover > a .imgMenu
+{
+	filter: none;
+	-webkit-filter: none;
+}
+.navCategory li a
+{
+	font-family: BYekan,tahoma;
+	display: block;
+	font-size: 12pt;
+	color: #EEE;
+	padding: 20px 18px 0px;
+	height: 42px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 150%;
+	background-position: top center;
+}
+A
+{
+	color: #00F;
+	text-decoration: none;
+}
+.navCategory li a .imgMenu
+{
+	height: 28px;
+	filter: url(  "data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale" ); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%);
+}
+.navCategory li a p
+{
+	margin: 5px auto;
+	text-align: center;
+	margin-top: 0px;
+}
+.navCategoryDivBoxBox
+{
+	position: absolute;
+	width: 980px;
+}
+.navCategoryDiv
+{
+	position: absolute;
+	width: 980px;
+	display: none;
+	top: 62px;
+	z-index: 10000;
+}
+.navCategory ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #f5f5f5;
+	float: right;
+	width: 972px;
+	border: solid 4px #555;
+}
+
+.navCategory ul li
+{
+	width: 178px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+.navCategory ul li:hover > a
+{
+	color: #000;
+	background-color: #eee;
+}
+.navCategory ul a
+{
+	display: block;
+	height: 23px;
+	padding: 7px 0px 1px 0px;
+	text-align: center;
+	background-image: none;
+	border: 0;
+	color: #232e5c;
+	font-weight: normal;
+	float: right;
+	width: 100%;
+	font-size: 10pt;
+}
+
+.navCategory ul.submenu ul
+{
+	position: absolute;
+	right: 200px;
+	display: none;
+	top: 0px;
+	padding: 0;
+	list-style: none;
+}
+.navCategory .ArrowDown
+{
+	border: 0px;
+	padding: 0px;
+	margin-right: 5px;
+}
+.navCategory .ArrowDown2
+{
+	border: 0px;
+	padding: 0px;
+	margin-top: 9px;
+	float: left;
+}
+.MapIndex
+{
+	float: right;
+	width: 100%;
+}
+.MapIndex p
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.BoxIndexArticle
+{
+  float: right;
+  width: 371px;
+  height: 410px;
+
+}
+.BoxIndexArticle h2
+{
+	float: right;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 12pt;
+	font-family: Byekan;
+	margin: 0px;
+	font-weight: normal;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+/*------------------------------------RepeaterIndex3-----------------------------*/
+.RepeaterIndex3
+{
+  float: right;
+  width: 362px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 0px;
+  border-bottom: solid 1px #00467f;
+}
+.RepeaterIndex3:hover
+{
+
+}
+.RepeaterIndex3:hover > h3
+{
+	color: #1788DC;
+}
+
+.RepeaterIndex3 .ImageBox
+{
+	float: right;
+	width: 70px;
+	height:50px;
+	border: solid 1px #ccc;
+	border-radius: 1px;
+	padding: 1px;
+	overflow: hidden;
+	text-align: center;
+}
+.RepeaterIndex3 .Image
+{
+	max-width: 70px;
+	height: 50px;
+}
+.RepeaterIndex3 h3
+{
+	color: #333;
+	float: right;
+	padding: 0;
+	margin: 0;
+	font-size: 10pt;
+	width: 277px;
+	margin-top: 1px;
+	line-height: 150%;
+	font-weight: normal;
+	text-align: right;
+	margin-right: 10px;
+}
+.RepeaterIndex3 .date
+{
+  width: 245px;
+  float: right;
+  color: #999;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 8pt;
+  margin-top: 2px;
+}
+.ServiceIndex
+{
+	background-color: #242927;
+	float: right;
+	padding: 10px 0 10px 0;
+	width:100%;
+	margin-top:20px;
+}
+.AdsHomePageGalleryBox2
+{
+	float: right;
+	width: 980px;
+}
+.AdsHomePageGalleryBox2 .ItemAds
+{
+	float: right;
+	width: 170px;
+	height:60px;
+	margin-top:10px;
+}
+.AdsHomePageGalleryBox2 .ItemAds .ItemImage
+{	float: right;
+	width: 170px;
+	height:60px;
+}

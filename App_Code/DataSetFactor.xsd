@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetFactor" targetNamespace="http://tempuri.org/DataSetFactor.xsd" xmlns:mstns="http://tempuri.org/DataSetFactor.xsd" xmlns="http://tempuri.org/DataSetFactor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ShopOnlineDbsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ShopOnlineDbsConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ShopOnlineDbsConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewBasketTableAdapter" GeneratorDataComponentClassName="ViewBasketTableAdapter" Name="ViewBasket" UserDataComponentName="ViewBasketTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ShopOnlineDbsConnectionString (Web.config)" DbObjectName="ShopOnlineDbs.dbo.ViewBasket" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT code, name_cala, category, price, count, price_col, name, tel, code_posti, address, date_buy, price_final, sh_buy FROM dbo.ViewBasket</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code" DataSetColumn="code" />
+              <Mapping SourceColumn="name_cala" DataSetColumn="name_cala" />
+              <Mapping SourceColumn="category" DataSetColumn="category" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="count" DataSetColumn="count" />
+              <Mapping SourceColumn="price_col" DataSetColumn="price_col" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="tel" DataSetColumn="tel" />
+              <Mapping SourceColumn="code_posti" DataSetColumn="code_posti" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="date_buy" DataSetColumn="date_buy" />
+              <Mapping SourceColumn="price_final" DataSetColumn="price_final" />
+              <Mapping SourceColumn="sh_buy" DataSetColumn="sh_buy" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetFactor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSetFactor" msprop:Generator_UserDSName="DataSetFactor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewBasket" msprop:Generator_TableClassName="ViewBasketDataTable" msprop:Generator_TableVarName="tableViewBasket" msprop:Generator_TablePropName="ViewBasket" msprop:Generator_RowDeletingName="ViewBasketRowDeleting" msprop:Generator_RowChangingName="ViewBasketRowChanging" msprop:Generator_RowEvHandlerName="ViewBasketRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewBasketRowDeleted" msprop:Generator_UserTableName="ViewBasket" msprop:Generator_RowChangedName="ViewBasketRowChanged" msprop:Generator_RowEvArgName="ViewBasketRowChangeEvent" msprop:Generator_RowClassName="ViewBasketRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:int" />
+              <xs:element name="name_cala" msprop:Generator_ColumnVarNameInTable="columnname_cala" msprop:Generator_ColumnPropNameInRow="name_cala" msprop:Generator_ColumnPropNameInTable="name_calaColumn" msprop:Generator_UserColumnName="name_cala" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:long" minOccurs="0" />
+              <xs:element name="count" msprop:Generator_ColumnVarNameInTable="columncount" msprop:Generator_ColumnPropNameInRow="count" msprop:Generator_ColumnPropNameInTable="countColumn" msprop:Generator_UserColumnName="count" type="xs:int" minOccurs="0" />
+              <xs:element name="price_col" msprop:Generator_ColumnVarNameInTable="columnprice_col" msprop:Generator_ColumnPropNameInRow="price_col" msprop:Generator_ColumnPropNameInTable="price_colColumn" msprop:Generator_UserColumnName="price_col" type="xs:long" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tel" msprop:Generator_ColumnVarNameInTable="columntel" msprop:Generator_ColumnPropNameInRow="tel" msprop:Generator_ColumnPropNameInTable="telColumn" msprop:Generator_UserColumnName="tel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="code_posti" msprop:Generator_ColumnVarNameInTable="columncode_posti" msprop:Generator_ColumnPropNameInRow="code_posti" msprop:Generator_ColumnPropNameInTable="code_postiColumn" msprop:Generator_UserColumnName="code_posti" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_buy" msprop:Generator_ColumnVarNameInTable="columndate_buy" msprop:Generator_ColumnPropNameInRow="date_buy" msprop:Generator_ColumnPropNameInTable="date_buyColumn" msprop:Generator_UserColumnName="date_buy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price_final" msprop:Generator_ColumnVarNameInTable="columnprice_final" msprop:Generator_ColumnPropNameInRow="price_final" msprop:Generator_ColumnPropNameInTable="price_finalColumn" msprop:Generator_UserColumnName="price_final" type="xs:long" minOccurs="0" />
+              <xs:element name="sh_buy" msprop:Generator_ColumnVarNameInTable="columnsh_buy" msprop:Generator_ColumnPropNameInRow="sh_buy" msprop:Generator_ColumnPropNameInTable="sh_buyColumn" msprop:Generator_UserColumnName="sh_buy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewBasket" />
+      <xs:field xpath="mstns:code" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

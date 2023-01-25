@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ShopOnline", ".", "{A317311A-52E1-4971-AEC7-BFF5C5CBE17D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/ShopOnline"
+		Debug.AspNetCompiler.PhysicalPath = "..\ShopOnline\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ShopOnline\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ShopOnline"
+		Release.AspNetCompiler.PhysicalPath = "..\ShopOnline\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ShopOnline\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7425"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A317311A-52E1-4971-AEC7-BFF5C5CBE17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A317311A-52E1-4971-AEC7-BFF5C5CBE17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

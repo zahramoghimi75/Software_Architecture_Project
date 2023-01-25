@@ -1,0 +1,451 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>فروشگاه آنلاین دیجی شاپ</title>
+    <link id="Link1" rel="Stylesheet" type="text/css" href="MenuNLevel/menu.css" />
+    <link id="Style1" rel="stylesheet" type="text/css" href="CSS/UserSheetFa.css" />
+    <link id="Style2" href="RatingStar/RatingStarFa.css" rel="stylesheet" type="text/css" />
+    <link id="Style3" rel="Stylesheet" href="CommentFaceBookVoteHand/CommentFaceBookFa.css" />
+    <link id="Style4" rel="Stylesheet" href="CommentFaceBookVoteHand/VoteHandFa.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script src="JavaScript/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Tooltip/js/jquery.hoverIntent.minified.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <input type="hidden" name="ctl12$Repeater2$ctl00$HiddenField1" id="ctl12_Repeater2_HiddenField1_0"
+        value="23" />
+    <div align="right" style="height: 0; margin: 0; padding: 0;">
+        <div class="HeaderTopHeaderTop">
+            <div class="HeaderTop">
+                <center>
+                    <div class="HeaderTopBox">
+                        <div class="LogoBox2">
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+
+                                    $('#nav li').hoverIntent(
+            function () {
+                //show its submenu
+                $('ul:first', this).slideDown(300);
+
+            },
+            function () {
+                //hide its submenu
+                $('ul:first', this).slideUp(300);
+            }
+            );
+                                });
+                            </script>
+                            <script type="text/javascript" src="Tooltip/js/jquery.hoverIntent.minified.js"></script>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('.navCategory .navCategoryDivBox').hoverIntent(
+            function () {
+                $('.navCategoryDiv', this).slideDown(200);
+                $(this).find("a:first").css("background-image", "url(Administrator/Files/Design/MenuHover.png)");
+                $(this).find("a:first").css("color", "#fb5235");
+            },
+            function () {
+                $('.navCategoryDiv', this).slideUp(200);
+                $(this).find("a:first").css("background-image", "none");
+                $(this).find("a:first").css("color", "#EEE");
+            }
+        );
+                                });
+                            </script>
+                            <ul id="nav" dir="rtl" style="width: 100%; text-align: center;">
+                                <li><a href="Home.aspx">خانه </a></li>
+                                <li><a href="Login.aspx">مدیریت</a></li>
+                                <li><a href="Gallery.aspx">بازدید از فروشگاه</a></li>
+                                <li><a href="Product.aspx">سفارش کالا</a></li>
+                                <li><a href="Search.aspx">پیگیری سفارش</a></li>
+                                <li><a href="Product.aspx">پیشنهادات شگفت انگیز</a></li>
+                                <li><a href="Register.aspx">عضویت</a></li>
+                                <li><a href="Contact.aspx">تماس با ما</a></li>
+                                <li><a href="About.aspx">درباره ما</a></li>
+                            </ul>
+                            <script language="javascript" type="text/javascript">
+                                $(document).ready(function () {
+
+                                    var keyWord;
+                                    $(".TextBoxAutoCapmlet").keyup(function (e) {
+                                        if (e.which == 13) {
+                                            event.preventDefault();
+                                        }
+                                        if ((e.which >= 48 && e.which <= 57) || (e.which >= 65 && e.which <= 90) ||
+                  (e.which >= 219 && e.which <= 222) || (e.which == 186) || (e.which == 188) || (e.which == 8) || (e.which == 46)) {
+                                            keyWord = $.trim($(".TextBoxAutoCapmlet").val());
+                                            if (keyWord.length > 2) {
+                                                $(".Result").html("<div class='AutoCamplet'><img src='administrator/files/design/load.gif' />" +
+                "</div>");
+                                                var data = "{'Keyword':'" + keyWord + "'}";
+                                                $.ajax(
+                {
+                    type: "POST",
+                    url: "Forms/AjaxHelper.aspx/MobileSelectSearch",
+                    data: data,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        $(".Result").html(msg.d);
+                        // $(".Result").show("slow");                       
+                        // animateResults();
+                    }
+                });
+                                            }
+                                            else {
+                                                // $(".Result").hide("slow");
+                                                $(".Result").html("");
+                                            }
+                                        }
+                                    });
+                                    function animateResults() {
+                                        $('.Result').each(function () {
+                                            var widthan = $(this).css('height'); +
+                    $(this).css({ height: '0%' }).animate({ height: widthan }, 'slow');
+                                        });
+                                    };
+                                });
+                            </script>
+                            <script type="text/javascript">
+                                jQuery(document).ready(function ($) {
+                                    $(".default").each(function () {
+                                        var defaultVal = $(this).attr('title');
+                                        $(this).focus(function () {
+                                            if ($(this).val() == defaultVal) {
+                                                $(this).removeClass('active').val('');
+                                            }
+                                        });
+                                        $(this).blur(function () {
+                                            if ($(this).val() == '') {
+                                                $(this).addClass('active').val(defaultVal);
+                                            }
+                                        })
+		.blur().addClass('active');
+                                    });
+
+
+
+                                });
+                                function defaulttextRemove() {
+                                    $('.default').each(function () {
+                                        var defaultVal = $(this).attr('title');
+                                        if ($(this).val() == defaultVal) {
+                                            $(this).val('');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="LogoBox">
+                            <a href='index.aspx' class="Logo" style="margin-top: 10px;"></a>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > ($(".HeaderTop2Box").position().top) + 8) {
+                        $(".HeaderTop2").css("position", "fixed");
+                        $(".HeaderTop2").css("top", "-8px");
+                        $(".HeaderTop2").css("z-index", "9999999999999");
+                    }
+
+                    else {
+                        $(".HeaderTop2").css("position", "static")
+                    }
+
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="nivo-slider/themes/pascal/pascalIndex.css" type="text/css"
+            media="screen" />
+        <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+        <div class="SlidePictureBox">
+            <div class="SlidePicture">
+                <center>
+                    <div class="SlidePictureContentBox">
+                        <div class="SlidePictureContent">
+                            <div class="slider-wrapper theme-pascal">
+                                <div id="slider" class="nivoSlider">
+                                    <img id="ctl13_Repeater1_Image1_2" src="Administrator/files/HeaderSlidePicture/slide2.jpg"
+                                        style="height: 395px;" />
+                                    <img id="ctl13_Repeater1_Image1_3" src="Administrator/files/HeaderSlidePicture/slide4.jpg"
+                                        style="height: 395px;" />
+                                    <img id="ctl13_Repeater1_Image1_4" src="Administrator/files/HeaderSlidePicture/slide5.jpg"
+                                        style="height: 395px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                jQuery("#slider").nivoSlider({
+                    effect: "fade",
+                    slices: 15,
+                    boxCols: 8,
+                    boxRows: 4,
+                    animSpeed: 1200,
+                    pauseTime: 6000,
+                    startSlide: 0,
+                    controlNav: true,
+                    controlNavThumbs: true,
+                    pauseOnHover: false,
+                    manualAdvance: false
+                });
+            });
+        </script>
+        <div style="float: right; width: 100%" dir="rtl">
+            <div style="width: 980px" dir="rtl">
+                <link id="ctl14_ctl00_Link1" rel="Stylesheet" type="text/css" href="tab/Tab.css">
+                </link>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(".BoxSearchItemCenter").hide();
+                        $(".BoxSearchItemCenter2").show();
+                        $(".BoxSearchItemTop").click(function () {
+                            $(".BoxSearchItemTop").removeClass("BoxSearchItemTopActive");
+                            $(this).addClass("BoxSearchItemTopActive");
+                            $(".BoxSearchItemCenter").hide();
+                            $(".BoxSearchItemCenter" + $(this).attr("rel")).show();
+                        })
+                    });
+                </script>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                var $setMainId = $('#carousel2');
+                var listBaseWidth2 = 170;
+                var slideTime2 = 500;
+                var delayTime2 = 2000;
+
+                $setMainId.each(function () {
+                    var carousel2Width = $(this).width();
+                    var carousel2Height = $(this).height();
+                    $(this).append('<div id="carousel2_prev"></div><div id="carousel2_next"></div>');
+                    $(this).children('ul').wrapAll('<div id="carousel2_wrap"><div id="carousel2_move"></div></div>');
+
+                    $(window).load(function () {
+                        $('#carousel2_wrap').css({
+                            width: '100%',
+                            height: (carousel2Height),
+                            position: 'relative',
+                            overflow: 'hidden'
+                        });
+
+                        $('ul.liquidlist2').each(function () {
+                            $(this).clone().prependTo('#carousel2_move');
+                            $(this).clone().appendTo('#carousel2_move');
+                        });
+
+                        var listCount = $('#carousel2_move').children('ul').children('li').length;
+                        var ulWrap = $('#carousel2_wrap').width();
+                        var ulNum = Math.floor(ulWrap / listBaseWidth2);
+                        var liFixed = Math.floor(ulWrap / ulNum);
+                        $('ul.liquidlist2 li').css({ width: (liFixed) });
+
+                        var ulWidth = (liFixed) * ((listCount) / 3);
+
+                        $('ul.liquidlist2').css({ width: (ulWidth), float: 'left' });
+
+                        $('#carousel2_move').css({
+                            top: '0',
+                            left: -(ulWidth),
+                            width: ((ulWidth) * 3),
+                            height: (carousel2Height),
+                            position: 'absolute'
+                        });
+
+                        timercarousel2();
+                        listAdjust2();
+
+                        function listAdjust2() {
+                            clearInterval(setTimerCal2);
+
+                            var cmPosLeft = parseInt($('#carousel2_move').css('left'));
+                            var mvLiWidth = parseInt($('ul.liquidlist2 li').css('width'));
+                            var cmFrac = (cmPosLeft / mvLiWidth);
+
+                            var listCount = $('#carousel2_move').children('ul').children('li').length;
+
+
+                            var ulWrap = $('#carousel2_wrap').width();
+                            var ulNum = Math.floor(ulWrap / listBaseWidth2);
+                            var liFixed = Math.floor(ulWrap / ulNum);
+                            $('ul.liquidlist2 li').css({ width: (liFixed) });
+
+                            $('ul.liquidlist2').css({ width: ((liFixed) * ((listCount) / 3)) });
+
+                            var ulWidth = (liFixed) * ((listCount) / 3);
+
+                            $('ul.liquidlist2').css({
+                                width: (ulWidth)
+                            });
+
+                            var cmFixedLeft = (liFixed * cmFrac);
+
+                            $('#carousel2_move').css({
+                                left: (cmFixedLeft),
+                                width: ((ulWidth) * 3)
+                            });
+
+                            timercarousel2();
+                        }
+
+                        $('#carousel2_prev').click(function () {
+                            clearInterval(setTimerCal2);
+                            var moveLengh = parseInt($('ul.liquidlist2 li').css('width'));
+                            $('#carousel2_move:not(:animated)').animate({ left: '+=' + (moveLengh) }, slideTime2, function () {
+                                carousel2Position();
+                                timercarousel2();
+                                listAdjust2();
+                            });
+                        });
+
+                        $('#carousel2_next').click(function () {
+                            clearInterval(setTimerCal2);
+                            var moveLengh = parseInt($('ul.liquidlist2 li').css('width'));
+                            $('#carousel2_move:not(:animated)').animate({ left: '-=' + (moveLengh) }, slideTime2, function () {
+                                carousel2Position();
+                                timercarousel2();
+                                listAdjust2();
+                            });
+                        });
+
+                        function carousel2Position() {
+                            var ulLeft = parseInt($('#carousel2_move').css('left'));
+                            var stateUlWidth = parseInt($('ul.liquidlist2').css('width'));
+                            var compWidth = (-(stateUlWidth) * 2);
+
+                            if (ulLeft === compWidth) {
+                                $('#carousel2_move').css({ left: -(stateUlWidth) });
+                            } else if (ulLeft === 0) {
+                                $('#carousel2_move').css({ left: -(stateUlWidth) });
+                            };
+                        };
+
+                        $(window).resize(function () {
+                            $('#carousel2_move:not(:animated)').each(function () {
+                                listAdjust2();
+                            });
+                        });
+                    });
+
+                    function timercarousel2() {
+
+                        setTimerCal2 = setInterval(function () {
+                            $('#carousel2_prev').click();
+                        }, delayTime2 + slideTime2);
+                    };
+
+                });
+            });
+        </script>
+        <style>
+            #carousel2
+            {
+                margin: 0 auto;
+                width: 980px;
+                height: 80px;
+                text-align: center;
+                position: relative;
+                padding-right: 5px;
+            }
+            
+            #carousel2_prev, #carousel2_next
+            {
+                top: 0;
+                width: 14px;
+                height: 25px;
+                background: #000;
+                cursor: pointer;
+                position: absolute;
+                margin-top: 45px;
+            }
+            #carousel2_prev
+            {
+                left: -12px;
+                background: transparent url(administrator/files/design/prev11.png) no-repeat top left;
+            }
+            #carousel2_next
+            {
+                right: -12px;
+                background: transparent url(administrator/files/design/next11.png) no-repeat top left;
+            }
+            
+            #carousel2 ul li
+            {
+                float: right;
+                padding: 0px;
+            }
+            
+            #carousel2 ul
+            {
+                list-style-type: none;
+                list-style-image: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        </style>
+        <div class="MapIndex">
+            <div class="Row">
+                <p align="center" dir="rtl">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Icon/Buy.PNG" Width="100%" />
+                </p>
+            </div>
+        </div>
+        <div id="Div3" class="Row">
+            <div class="Content">
+                <center>
+                    <div class="ContentMainBox">
+                        <div id="Div2" class="Row">
+                            <center>
+                                <div style="width: 980px;" dir="rtl">
+                                    <asp:ContentPlaceHolder ID="Content1" runat="server">
+                                        <br />
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </center>
+                        </div>
+                        <center>
+                            <div id="div1" class="ContentMain">
+                                <center>
+                                    <div class="ContentMainBoxBox">
+                                        <div class="ContentMainBoxBoxLeft">
+                                        </div>
+                                        <div class="ContentMainBoxBoxRight">
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </center>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div id="Footer" style="height: 70px">
+            <center>
+                <div class="FooterBox">
+                    <div class="CopyRight">
+                        <br />
+                        معماری نرم افزار &quot;زهرا مقیمی و آرین بلوری&quot;</div>
+                </div>
+            </center>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

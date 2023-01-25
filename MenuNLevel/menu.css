@@ -1,0 +1,95 @@
+﻿.MenuNLevel
+{
+    float: right;
+    width: 100%;
+    padding-top:10px;
+}
+
+
+#MenuNLevel, #MenuNLevel ul
+{
+    list-style: none;
+    padding: 0px 0 0 0;
+    margin: 0;
+}
+#MenuNLevel li
+{
+    position: relative;
+     -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    border-bottom:solid 1px #2A2A2A;
+    z-index:9999;
+    
+}
+#MenuNLevel ul
+{
+    position: absolute;
+    top:-1px;
+    left: -250px;
+    width: 250px;
+    padding: 0;
+    display: none;
+    background-color: #1F1F1F;
+    box-shadow: 0px 2px 6px #999999;
+    border:solid 1px #aaa;
+}
+#MenuNLevel ul li
+{
+    float: none;
+}
+#MenuNLevel a:link, #MenuNLevel a:visited
+{
+    display: block;
+    font-size: 10pt;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 10px 9px 10px;
+     -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#MenuNLevel li:hover > a
+{
+   color:#fff;
+}
+#MenuNLevel a:hover
+{
+    color:#fff;
+}
+#MenuNLevel li:hover
+{
+    background-color: #03a6f9;
+}
+#MenuNLevel li:hover ul.submenu
+{
+    display: block;
+}
+#MenuNLevel ul.submenu ul
+{
+    top: -1px;
+    left: -250px;
+    display: none;
+    z-index: 1;
+}
+#MenuNLevel ul.submenu li:hover > ul
+{
+    display: block;
+}
+#MenuNLevel ul a:link, #MenuNLevel ul a:visited
+{
+    border-right: 0px solid #c0c0c0;
+}
+#MenuNLevel .hr
+{
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #ffffff;
+    height: 0px;
+}
+#MenuNLevel .arrow
+{
+    background: url('arrow.png') no-repeat center left;
+}

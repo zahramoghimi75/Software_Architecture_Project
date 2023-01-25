@@ -1,0 +1,17 @@
+.Voting {float:left;}
+.Voting .Waiting {float:right;width:16px; height:16px;background:url(Images/Waiting.gif) no-repeat 0 0;border:0; text-indent:-9999px; cursor:pointer;margin:0px;padding:0px;}
+.Voting .PositiveButton {float:right; width:16px; height:16px; background:url(Images/Positive.png) no-repeat 0 0; border:0; text-indent:-9999px; cursor:pointer;margin:0px;padding:0px;}
+.Voting .PositiveButton:hover { background-position:0 -16px; }
+.Voting .PositiveButton:active { background-position:0 -32px; }
+.Voting .PositiveButtonDisabled {float:right; width:16px; height:16px; background:url(Images/Positive.png) no-repeat 0 0; border:0; text-indent:-9999px;background-position:0 -48px; }
+.Voting .PositiveButtonDisabled:hover {float:right; width:16px; height:16px; background:url(Images/Positive.png) no-repeat 0 0; border:0; text-indent:-9999px;background-position:0 -48px; }
+
+.Voting .NegativeButton {float:right; width:16px; height:16px; background:url(Images/Negative.png) no-repeat 0 0; border:0; text-indent:-9999px; cursor:pointer;}
+.Voting .NegativeButton:hover { background-position:0 -16px; }
+.Voting .NegativeButton:active { background-position:0 -32px; }
+.Voting .NegativeButtonDisabled {float:right; width:16px; height:16px; background:url(Images/Negative.png) no-repeat 0 0; border:0; text-indent:-9999px;background-position:0 -48px; }
+.Voting .NegativeButtonDisabled:hover {float:right; width:16px; height:16px; background:url(Images/Negative.png) no-repeat 0 0; border:0; text-indent:-9999px;background-position:0 -48px; }
+
+.Voting .ResultPositiveSpan {font-size:8pt;font-family:Tahoma;width:30px;height:16px; float:right;text-align:center;font-weight:bold;color:Green;padding:0px;line-height:140%;}
+.Voting .ResultNegativeSpan {font-size:8pt;font-family:Tahoma;width:30px;height:16px;float:right;text-align:center;font-weight:bold;color:Red;padding:0px;line-height:140%;}
+

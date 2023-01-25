@@ -1,0 +1,134 @@
+.CommentFaceBook
+{
+    float: right;
+    width: 710px;
+    font-size: 8pt;
+    text-align:right;
+    margin-bottom:5px;
+    font-family:Tahoma;
+    line-height:170%;
+    margin-top:5px;
+}
+.CommentFaceBookItem2
+{
+    margin-right:35px;
+
+}
+.CommentFaceBook .CommentFaceBookItem
+{
+    float: right;
+    width: 100%;
+}
+.CommentFaceBook .CommentFaceBookItem .AvatarDiv
+{
+    float: right;
+    margin: 5px;
+    height: 32px;
+    width: 32px;
+}
+.CommentFaceBook .CommentFaceBookItem .AvatarDiv .Avatar
+{
+    height: 32px;
+    width: 32px;
+}
+.CommentFaceBook .LeftDiv
+{
+    float: right;
+    margin: 5px;
+    margin-right: 0px;
+    width: 660px;
+}
+.CommentFaceBookItem2 .LeftDiv
+{
+       width:625px !important;
+}
+.CommentFaceBook .LeftDiv .Name
+{
+    float: right;
+    text-decoration: none;
+    color: #3B5998;
+    font-weight: bold;
+}
+.CommentFaceBook .LeftDiv .Name:hover
+{
+    text-decoration: underline;
+}
+.CommentFaceBook .LeftDiv .Title
+{
+    float: right;
+    margin-right: 5px;
+    width: 395px;
+}
+.CommentFaceBook .LeftDiv .Text1
+{
+    float: right;
+    width: 660px;
+    color: #333;
+    font-size:8pt;
+    text-align:justify;
+}
+.CommentFaceBookItem2 .LeftDiv .Text1
+{
+       width: 625px !important;
+}
+
+.CommentFaceBook .ItemSeprator
+{
+    float: right;
+    height: 2px;
+    background-color: #2A2A2A;
+    width: 100%;
+}
+.CommentFaceBook .DivForm
+{
+    float: right;
+    width: 100%;
+    margin-top: 5px;
+}
+.CommentFaceBook .DivForm .SpanTitle
+{
+    float: right;
+    width: 60px;
+    text-align: left;
+    margin-right: 5px;
+    color:#555;
+}
+.CommentFaceBook .DivForm .TextBoxTitle
+{
+    float: right;
+    width: 200px;
+    border: solid 1px #bcbbcb;
+    margin-right: 5px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    color: #333;
+    margin-top:2px;
+    border-radius:3px;
+}
+.CommentFaceBook .DivForm .TextBoxText
+{
+    float: right;
+    width: 680px;
+    border: solid 1px #bcbbcb;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 50px;
+    overflow: hidden;
+    color: #333;
+    font-family: Tahoma;
+    font-size: 9pt;
+    border-radius:3px;
+}
+
+.CommentFaceBook .ButtonRegister
+{
+    margin-right:10px;
+    margin-left:10px;
+}
+.CommentFaceBook .RegisterMessage
+{
+    float: right;
+    color: Red;
+    margin-top: 10px;
+    margin-top: 13px;
+}
